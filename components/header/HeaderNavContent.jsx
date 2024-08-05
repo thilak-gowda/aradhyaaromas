@@ -233,16 +233,16 @@ const HeaderNavContent = () => {
             <ul>
               {shopItems.map((item) => (
                 <li 
-                // className="dropdown" key={item.id}>
-                //   <span
-                //     className={`${
-                //       isActiveParentChaild(shopItems[0].items, usePathname())
-                //         ? "current "
-                //         : ""
-                //     }`}
+                className="dropdown" key={item.id}>
+                  <span
+                    className={`${
+                      isActiveParentChaild(shopItems[0].items, usePathname())
+                        ? "current "
+                        : ""
+                    }`}
                   >
-                    {/* {item.title}
-                  </span> */}
+                    {item.title}
+                  </span>
                   <ul>
                     {item.items.map((menu, i) => (
                       <li

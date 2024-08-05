@@ -34,7 +34,7 @@ const EnterAddrsss = ({ visible, onClose }) => {
     const [errorMessage, setErrorMessage] = useState("");
     const [selectenable, setSelectEnable] = useState(true);
 
-    let pincodeId = localStorage.getItem("pincode");
+    let pincodeId = [];
 
 
     const handleAddAddress = (values) => {

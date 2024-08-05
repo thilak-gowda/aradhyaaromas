@@ -3,7 +3,7 @@ import LoginWithSocial from "./LoginWithSocial";
 import { useDispatch,useSelector } from "react-redux";
 import { LoginUserData, ProfileUserData, fetchBannerData } from "../../../../features/reducer/thunks";
 import { useEffect, useState } from "react";
-
+import Image from "next/image";
 const FormContent = () => {
   const dispatch = useDispatch();
   const [email, setEmail] = useState("");
